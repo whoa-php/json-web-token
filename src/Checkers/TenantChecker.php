@@ -43,11 +43,11 @@ class TenantChecker implements ClaimChecker
 
     /**
      * @param string $tenant
-     * @param bool   $protectedHeader
+     * @param bool $protectedHeader
      */
     public function __construct(string $tenant, bool $protectedHeader = false)
     {
-        $this->tenant          = $tenant;
+        $this->tenant = $tenant;
         $this->protectedHeader = $protectedHeader;
     }
 
